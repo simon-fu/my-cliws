@@ -19,4 +19,5 @@ jobs:
     - name: Build
       run: |
         echo ${{ secrets.MY_CONN_URL }}
+        cargo run -- -r ${{ secrets.MY_CONN_URL }} bash -i
 
